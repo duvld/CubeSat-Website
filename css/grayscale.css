@@ -39,11 +39,12 @@ a:focus, a:hover {
 }
 
 #mainNav {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:Arial, sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black;
+  background-color: #e5e5e5;
+  margin-top:50px;
 }
 
 #mainNav .navbar-toggler {
@@ -58,7 +59,7 @@ a:focus, a:hover {
 }
 
 #mainNav a {
-  color: white;
+  color: black;
 }
 
 #mainNav .navbar-nav .nav-item {
@@ -227,7 +228,6 @@ a:focus, a:hover {
 
 .team-section {
   color: black;
-  background-color: #d2e0eb;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -241,7 +241,7 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
   }
   #map {
@@ -482,7 +482,7 @@ img::-moz-selection {
 
 /*------------About css features------------*/
 .main-about {
-  padding-top: 200px;  
+  padding-top: 100px;  
   width: 950px;
   margin: auto;
 }
@@ -558,5 +558,3 @@ img::-moz-selection {
   font-size: 12px;
   }
 }
-
-
