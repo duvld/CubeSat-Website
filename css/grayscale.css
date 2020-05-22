@@ -293,11 +293,8 @@ ul.banner-social-buttons {
   }
 }
 
-footer {
-  padding: 50px 0;
-}
-
 footer p {
+  padding-top: 30px;
   font-size: 14px;
   margin: 0;
 }
@@ -480,6 +477,73 @@ img::-moz-selection {
   left: -8px;
 }
 
+/*------------Team css features------------*/
+
+.main-team {
+    margin: auto;
+    width: 950px;
+    padding-top: 100px;
+}
+
+.main-team-blurb {
+    margin: auto;
+    width: 70%;
+    padding-top: 50px;
+    text-align: justify;
+}
+
+.main-team-icons {
+    margin: auto;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.team-img {
+  display: inline-block;
+  border: 3px solid orange;
+  border-radius: 100%;
+  color: #fafafa;
+  height: 200px;
+  -webkit-box-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  margin-right: 10px;
+}
+.team-img img {
+  height: 100%;
+  width: 100%;
+}
+.team-img__overlay {
+    background-color: rgba(255,165,0,0.6);
+    color: #fafafa;
+    font-size: 24px;
+  -webkit-box-align: center;
+          align-items: center;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  z-index: 1;
+  text-align: center;
+}
+.team-img__overlay-title {
+padding-top: 42px;
+font-size: 24px;
+margin-bottom: 5px;
+font-weight: bold;
+} 
+.team-img__overlay-body {
+font-size: 18px;
+} 
+.team-img__overlay:hover {
+  opacity: 1;
+}
 /*------------About css features------------*/
 .main-about {
   padding-top: 100px;  
@@ -520,8 +584,8 @@ img::-moz-selection {
   text-align: justify;
   padding-left: 20px;
   width: 79%;
-
 }
+
 .about-text-satellite-icon {
   width: 20%;
   
@@ -539,8 +603,244 @@ img::-moz-selection {
   width: 35%;
 }
 
+/*-------------Payload CSS features---------*/
+.main-payload {
+  padding-top: 100px;  
+  width: 950px;
+  margin: auto;
+}
+
+.main-payload-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid orange;
+  width:90%; 
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.payload-title {
+  font-size: 72px;
+}
+
+/*--------Team Members CSS features---------*/
+.main-team-members {
+  padding-top: 100px;  
+  width: 950px;
+  margin: auto;
+}
+
+.main-t-mem {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid orange;
+  display: flex;
+  margin-top: 32px;
+
+}
+.team-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  line-height: 120px;
+  text-align: center;
+  background: rgba(59, 186, 181, 1);
+  position: relative;
+ 
+}
+
+.team-text {
+  width: 80%;
+  text-align: justify;
+  display: inline-flex;
+  padding-top: 20px;
+  padding-left: 50px;
+
+}
+
+.team-icon {
+  position: absolute;
+  top: 60px;
+  left: -24px;
+}
+
+/*---------Contact CSS features------------*/
+.main-contact {
+  padding-top: 100px;  
+  width: 950px;
+  margin: auto;
+}
+
+.main-contact-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid orange;
+  width:90%; 
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  font-size: 72px;
+}
+
+.contact-us-button {
+  font-size: 16px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  background: #39BF6E;
+  border-bottom: 2px solid #227041;
+  clear: both;
+  width: 20%;
+  display: inline-block;
+  border-radius: 0px;
+  font-size: 14px;
+  border-bottom: 3px solid transparent;
+  margin-top: 1px;
+  opacity: 0.9;
+}
 
 
+.footer {
+  background: #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 200px;
+}
+
+footer {
+  box-shadow: 0 50vh 0 50vh #e5e5e5;
+}
+
+/*---------------Gallery CSS stuff-------------*/
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 @media(max-width: 992px){
   .card>div>p{
