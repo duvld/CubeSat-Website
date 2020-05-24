@@ -1,0 +1,41 @@
+/*------------About css features------------*/
+  
+  .main-about-img {
+    padding-bottom: 40px;
+  
+  }
+  .about-img {
+    position: relative;
+    left: -25px;
+  }
+  
+  .main-about-text {
+    text-align: justify;
+    width:90%; 
+    margin: auto;
+    display: inline-block;
+  }
+  .about-text-body {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: justify;
+    padding-left: 20px;
+    width: 79%;
+  }
+  
+  .about-text-satellite-icon {
+    width: 20%;
+    
+  }
+  .about-text-body-two {
+    width: 62%;
+    margin-right: 20px;
+    vertical-align: top;  
+    display: inline-block;
+    text-align: justify;
+  
+  }
+  
+  .about-text-satellite-img {
+    width: 35%;
+  }
