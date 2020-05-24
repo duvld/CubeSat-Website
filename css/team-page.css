@@ -1,0 +1,67 @@
+/*------------Team css features------------*/
+
+.main-team {
+    margin: auto;
+    width: 950px;
+    padding-top: 100px;
+}
+
+.main-team-blurb {
+    margin: auto;
+    width: 70%;
+    padding-top: 50px;
+    text-align: justify;
+}
+
+.main-team-icons {
+    margin: auto;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.team-img {
+  display: inline-block;
+  border: 3px solid orange;
+  border-radius: 100%;
+  color: #fafafa;
+  height: 200px;
+  -webkit-box-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  margin-right: 10px;
+}
+.team-img img {
+  height: 100%;
+  width: 100%;
+}
+.team-img__overlay {
+    background-color: rgba(255,165,0,0.6);
+    color: #fafafa;
+    font-size: 24px;
+  -webkit-box-align: center;
+          align-items: center;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  z-index: 1;
+  text-align: center;
+}
+.team-img__overlay-title {
+padding-top: 42px;
+font-size: 24px;
+margin-bottom: 5px;
+font-weight: bold;
+} 
+.team-img__overlay-body {
+font-size: 18px;
+} 
+.team-img__overlay:hover {
+  opacity: 1;
+}
