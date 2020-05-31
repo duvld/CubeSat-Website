@@ -1,188 +1,169 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-
-        <title>ESSENCE York University</title>
-
-        <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-        <!-- Custom fonts for this template -->
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet" type="text/css" />
-
-        <!-- Custom styles for this template -->        
-        <link href="css/gallery-page.css" rel="stylesheet" />
-        <link href="css/grayscale.css" rel="stylesheet" />
-
-         <!-- CSS only -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-        <!-- JS, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
-                 
-        <!-- JQuery -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script>
-            $(function() {
-            $("#navigation").load("navigation.html");
-            $('div.main-team-icons').css('padding-left', (($('div.main-team-icons').width() - 840 )/2))
-            $('div.main-team-blurb').css('padding-left', (($('div.main-team-icons').width() - 840 )/2))
-            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-            });
-            // Open the Modal
-            function openModal() {
-            document.getElementById("myModal").style.display = "block";
-            }
-
-            // Close the Modal
-            function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-            }
-
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            captionText.innerHTML = dots[slideIndex-1].alt;
-            }
-        </script>
-    </header>
-    <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-      <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="index.html">ESSENCE</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              Menu
-              <i class="fa fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="payload.html">Payload</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
-              </li>
-              </ul>
-          </div>
+   <header>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <title>ESSENCE York University</title>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <!-- Custom fonts for this template -->
+      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet" type="text/css" />
+      <!-- Custom styles for this template -->        
+      <link href="css/gallery-page.css" rel="stylesheet" />
+      <link href="css/grayscale.css" rel="stylesheet" />
+      <!-- CSS only -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!-- JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+      <!-- JQuery -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script>
+         $(function() {
+         $("#navigation").load("navigation.html");
+         $('div.main-team-icons').css('padding-left', (($('div.main-team-icons').width() - 840 )/2))
+         $('div.main-team-blurb').css('padding-left', (($('div.main-team-icons').width() - 840 )/2))
+         $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+         });
+         // Open the Modal
+         function openModal() {
+         document.getElementById("myModal").style.display = "block";
+         }
+         
+         // Close the Modal
+         function closeModal() {
+         document.getElementById("myModal").style.display = "none";
+         }
+         
+         var slideIndex = 1;
+         showSlides(slideIndex);
+         
+         // Next/previous controls
+         function plusSlides(n) {
+         showSlides(slideIndex += n);
+         }
+         
+         // Thumbnail image controls
+         function currentSlide(n) {
+         showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("demo");
+         var captionText = document.getElementById("caption");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+         captionText.innerHTML = dots[slideIndex-1].alt;
+         }
+      </script>
+   </header>
+   <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">ESSENCE</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="payload.html">Payload</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="team.html">Team</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+         <div class="column">
+            <img src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="openModal();currentSlide(1)" class="hover-shadow">
+         </div>
+         <div class="column">
+            <img src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="openModal();currentSlide(2)" class="hover-shadow">
+         </div>
+         <div class="column">
+            <img src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="openModal();currentSlide(3)" class="hover-shadow">
+         </div>
+         <div class="column">
+            <img src="https://images.unsplash.com/photo-1547288242-f3d375fc7b5f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="openModal();currentSlide(4)" class="hover-shadow">
+         </div>
       </div>
-  </nav>
-    <!-- Images used to open the lightbox -->
-<div class="row">
-    <div class="column">
-      <img src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="openModal();currentSlide(1)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="openModal();currentSlide(3)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="https://images.unsplash.com/photo-1547288242-f3d375fc7b5f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="openModal();currentSlide(4)" class="hover-shadow">
-    </div>
-  </div>
-  
-  <!-- The Modal/Lightbox -->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-  
-      <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="width:100%">
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+         <span class="close cursor" onclick="closeModal()">&times;</span>
+         <div class="modal-content">
+            <div class="mySlides">
+               <div class="numbertext">1 / 4</div>
+               <img src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">2 / 4</div>
+               <img src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">3 / 4</div>
+               <img src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">4 / 4</div>
+               <img src="https://images.unsplash.com/photo-1547288242-f3d375fc7b5f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="width:100%">
+            </div>
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption"></p>
+            </div>
+            <!-- Thumbnail image controls -->
+            <div class="column">
+               <img class="demo" src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="currentSlide(1)" alt="Nature">
+            </div>
+            <div class="column">
+               <img class="demo" src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+               <img class="demo" src="https://images.unsplash.com/photo-1546111380-cfca9a43dd85?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+            <div class="column">
+               <img class="demo" src="https://images.unsplash.com/photo-1547288242-f3d375fc7b5f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="currentSlide(4)" alt="Lights">
+            </div>
+         </div>
       </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="width:100%">
+   </body>
+   <!-- Footer -->
+   <footer>
+      <div class="footer text-center">
+         <a class="contact-us-button" href="mailto:a@gmail.com">
+         Contact Us
+         </a>
+         <p>Website Maintained by <a href="https://github.com/duvld">Anji Tong</a></p>
       </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
-        <img src="https://images.unsplash.com/photo-1547288242-f3d375fc7b5f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="width:100%">
-      </div>
-  
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-      <!-- Caption text -->
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-  
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="currentSlide(1)" alt="Nature">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="currentSlide(2)" alt="Snow">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="https://images.unsplash.com/photo-1546111380-cfca9a43dd85?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="currentSlide(3)" alt="Mountains">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="https://images.unsplash.com/photo-1547288242-f3d375fc7b5f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" onclick="currentSlide(4)" alt="Lights">
-      </div>
-    </div>
-  </div>
-  </body>
-  <!-- Footer -->
-  <footer>
-      <div class="footer text-center"> 
-          <a class="contact-us-button" href="mailto:a@gmail.com">
-              Contact Us
-          </a>
-          <p>Website Maintained by <a href="https://github.com/duvld">Anji Tong</a></p>
-      </div>
-  </footer>
+   </footer>
 </html>
