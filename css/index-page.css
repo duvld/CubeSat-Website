@@ -1,6 +1,7 @@
 
 .main-root{
-    padding-top:200px;    
+    padding-top:200px;   
+    display: block; 
 }
 .main-img{
     display:inline-block;
@@ -10,7 +11,9 @@
     vertical-align: top;
     display:inline-block;
 }
-
+.main-root-2 {
+    display: none;
+}
 .b1 button.b1link {
     width: 100%;
 }
@@ -88,7 +91,7 @@
 }
 
 .main-hello-text{
-    width:480px;
+    max-width:480px;
     text-align:left;
     color:#8C8B8B;
     font-family: raleway,sans-serif;
@@ -120,4 +123,53 @@
   margin-bottom:20px;
   font-weight:bolder;
   color: orange;
+}
+
+@media (max-width: 1087px) {
+    .main-root {
+        padding-top: 32px;
+    }
+    .masthead { 
+        padding: 0px;
+    }
+}
+@media (max-width: 632px) {
+    .main-root-2 {
+        display: block;
+    }
+    .main-root {
+        display: none;
+    }
+    .main-img img{
+        width: 75% !important;
+        height: 75% !important;
+    }
+    .main-hello-text {
+        padding-top: 32px;
+    }
+    .main-hello-icons {
+        margin: auto;
+        width: 72%;
+    }
+    .b1link-team {
+        margin-top: 32px;
+    }
+    .about-icon-1 {
+        top: 17px 
+    }
+}
+@media (max-width: 443px) {
+    .main-hello-icons {
+        width: 90%;
+    }
+    .main-hello-icons .b1{
+        margin: 0;
+    }
+}
+@media (min-width: 480px) {
+    .b1[data-state~="shouldUseFlex"][data-state~="left"] .b1link,
+    .b1[data-state~="shouldUseFlex"][data-state~="left"] .b1labelwrapper {
+        justify-content: flex-start;
+        margin-top: 24px;
+    }
 }

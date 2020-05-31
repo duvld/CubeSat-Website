@@ -1,7 +1,7 @@
 /*-------------Payload CSS features---------*/
 .main-payload {
     padding-top: 100px;  
-    width: 950px;
+    max-width: 950px;
     margin: auto;
   }
   
@@ -15,4 +15,11 @@
   
   .payload-title {
     font-size: 72px;
+  }
+
+  @media (max-width: 972px) {
+    .payload-text {
+      width: 90%;
+      margin: auto;
+    }
   }
