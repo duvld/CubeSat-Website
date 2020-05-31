@@ -20,13 +20,16 @@
         <link href="css/grayscale.css" rel="stylesheet" />
         <link href="css/about-page.css" rel="stylesheet" />
 
-                
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>          
+        
         <!-- JQuery -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script>
             $(function() {
-            $("#navigation").load("navigation.html");
-            $(window).load(function() {console.log($(".main-about-img"));});
+            $("#navigation").load("navigation.html");            
             });
         </script>
     </head>
@@ -65,10 +68,11 @@
                 <img class="about-img"src="./img/about-img.png"  >
             </div>
             <div class="main-about-text-1">
-                <img class="about-text-satellite-icon" src="img/satellite-icon.png">
+                
                 <p class="about-text-body">The aim of ESSENCE ( Educational Space Science and ENgineering CubeSat Experiment ) is to foster the training of highly qualified personnel (HQP) to form a critical mass of space scientists and engineers in Canada through the design, build,
                     launch and operation of a Canadian CubeSat mission. 
                 </p>
+                <img class="about-text-satellite-icon" src="img/satellite-icon.png">
             </div>
             <div class="main-about-text-2">                    
                 <p class="about-text-body-two">The key focus of the mission is centered on the training of HQP through this unique end-to-end hands-on experience, where HQP will acquire expertise in a wide variety of areas – ranging

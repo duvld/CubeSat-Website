@@ -21,6 +21,9 @@
     text-align: justify;
     padding-left: 20px;
     width: 79%;
+    float: right;
+    margin-bottom: 0px;
+    margin-top: 18px;
   }
   
   .about-text-satellite-icon {
@@ -38,4 +41,38 @@
   
   .about-text-satellite-img {
     width: 35%;
+  }
+
+  @media (max-width: 976px) {
+    .about-img {
+       width: 100%;
+       left: 0.1%;
+       padding-left: 0px;
+    }
+
+    .main-about-text-1 {
+      position: relative;
+      text-align: center;
+    }
+
+    .about-text-body {
+      margin: auto;
+      margin-bottom: 24px;
+      display: block;
+      padding-left: 0px;
+      float: none;
+    }
+    .about-text-satellite-icon {
+      margin-bottom: 24px;
+    }
+    .main-about-text-2 {
+      text-align: center;
+    }
+    .about-text-body-two {
+      margin: auto;
+      display: block;
+      width: 79%;
+      margin-bottom: 24px;
+
+    }
   }

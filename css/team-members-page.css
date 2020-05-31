@@ -1,44 +1,62 @@
 /*--------Team Members CSS features---------*/
 .main-team-members {
-    padding-top: 100px;  
-    width: 950px;
-    margin: auto;
+  padding-top: 100px;  
+  max-width: 950px;
+  margin: auto;
+}
+
+.main-t-mem {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid orange;
+  display: flex;
+  margin-top: 32px;
+
+}
+.team-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  line-height: 120px;
+  text-align: center;
+  background: rgba(59, 186, 181, 1);
+  position: relative;
+  
+}
+
+.team-text {
+  width: 80%;
+  text-align: justify;
+  display: inline-flex;
+  padding-top: 20px;
+  padding-left: 50px;
+
+}
+
+.team-icon {
+  position: absolute;
+  top: 60px;
+  left: -24px;
+}
+
+@media (max-width: 480px) {
+  .main-team-members {
+    width: auto;
   }
-  
   .main-t-mem {
-    width: 90%;
-    margin: auto;
-    padding-bottom: 40px;
-    border-bottom: 1px solid orange;
-    display: flex;
-    margin-top: 32px;
-  
+    display: block;
   }
   .team-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #fff;
-    line-height: 120px;
-    text-align: center;
-    background: rgba(59, 186, 181, 1);
-    position: relative;
-   
+    margin: auto; 
   }
-  
+
   .team-text {
-    width: 80%;
-    text-align: justify;
-    display: inline-flex;
-    padding-top: 20px;
-    padding-left: 50px;
-  
+    display: block;
+    padding-left: 0px;
+    margin: auto;
   }
-  
-  .team-icon {
-    position: absolute;
-    top: 60px;
-    left: -24px;
-  }
+}
   
